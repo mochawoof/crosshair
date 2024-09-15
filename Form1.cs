@@ -13,6 +13,8 @@ namespace crosshair
 
         static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
 
+        string VERSION = "1.0.0";
+
         public Form()
         {
             InitializeComponent();
@@ -68,7 +70,7 @@ namespace crosshair
             pictureBox.Size = this.Size;
             pictureBox.Location = new Point(0, 0);
 
-            instructions.Text = $@"v{Application.ProductVersion}
+            instructions.Text = $@"v{VERSION}
 
 Press Ctrl+Shift+Q to quit.
 

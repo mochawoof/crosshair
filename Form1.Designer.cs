@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             instructions = new Label();
             openFileDialog = new OpenFileDialog();
             pictureBox = new PictureBox();
@@ -68,6 +69,7 @@
             Controls.Add(instructions);
             Controls.Add(pictureBox);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
             Name = "Form";
             ShowInTaskbar = false;
